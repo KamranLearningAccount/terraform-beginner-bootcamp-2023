@@ -20,4 +20,4 @@ sudo ./aws/install
 aws sts get-caller-identity
 
 # Change directory back to the project root -> Move us back to the project root
-cd $PROJECT_ROOT
+cd $GITPOD_REPO_ROOT # -> This works better for me
