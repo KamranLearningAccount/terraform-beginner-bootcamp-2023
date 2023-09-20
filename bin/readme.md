@@ -1,0 +1,1 @@
+Moving the contents of `.gitpod.yml` into seperate scripts within their own directorty enabled the code to be more managable and robust. The `bin` directory contains the scripts that are called from `.gitpod.yml` and the `bin/readme.md` file contains the documentation for the scripts.

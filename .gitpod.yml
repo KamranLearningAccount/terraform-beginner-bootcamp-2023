@@ -1,20 +1,24 @@
+# This file defines the Gitpod configuration for the Terraform Beginner Bootcamp 2023 project.
+
+# The `tasks` section defines a list of tasks that will be executed when the workspace is started.
 tasks:
+  # The `terraform` task installs the Terraform CLI by running the `install_terraform_cli` script.
   - name: terraform
-    init: |
-      sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
-      curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
-      sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
-      sudo apt-get update && sudo apt-get install terraform
+    before: |
+      source ./bin/install_terraform_cli
+
+  # The `aws-cli` task installs the AWS CLI and sets the `AWS_CLI_AUTO_PROMPT` environment variable to `on-partial`.
   - name: aws-cli
     env:
       AWS_CLI_AUTO_PROMPT: on-partial
-    init: |
-      cd /workspace
-      curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-      unzip awscliv2.zip
-      sudo ./aws/install
-      cd $THEIA_WORKSPACE_ROOT
+    before: |
+      source ./bin/install_aws_cli
+
+# The `vscode` section defines the list of VS Code extensions that will be installed in the workspace.
 vscode:
   extensions:
+    # The `aws-toolkit-vscode` extension provides AWS-specific functionality for VS Code.
     - amazonwebservices.aws-toolkit-vscode
+
+    # The `terraform` extension provides Terraform-specific functionality for VS Code.
     - hashicorp.terraform
