@@ -28,4 +28,4 @@ sudo apt update
 sudo apt-get install terraform -y
 
 # Change directory back to the project root
-cd $PROJECT_ROOT
+cd $GITPOD_REPO_ROOT # -> This works better for me
