@@ -5,13 +5,16 @@ tasks:
   # The `terraform` task installs the Terraform CLI by running the `install_terraform_cli` script.
   - name: terraform
     before: |
+      source ./bin/set_tf_alias
       source ./bin/install_terraform_cli
+      source ./bin/generate_tfrc_credentials
 
   # The `aws-cli` task installs the AWS CLI and sets the `AWS_CLI_AUTO_PROMPT` environment variable to `on-partial`.
   - name: aws-cli
     env:
       AWS_CLI_AUTO_PROMPT: on-partial
     before: |
+      source ./bin/set_tf_alias
       source ./bin/install_aws_cli
 
 # The `vscode` section defines the list of VS Code extensions that will be installed in the workspace.
