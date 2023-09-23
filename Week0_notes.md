@@ -51,37 +51,6 @@ This week focused on initial setup and environment configuration. Tasks complete
 - **Discord Channels**: Use the correct section under `help forums` and tag your questions.
 - **Markdown Support**: Include as much detail as possible using markdown.
 
----
-
-# GitHub Flavored Markdown (GFM)
-
-## Documentation Essentials
-- **Mandatory Documentation**: Ensure a consistent level of documentation.
-- **Notion to GitHub**: Export Notion notes to markdown and upload them to GitHub.
-
-### GFM Features
-- **Enhanced Markdown**: GFM offers additional features over standard Markdown.
-  - **Images**: Use Markdown or HTML syntax for images.
-  - **Text Formatting**: Use `__bold__` or `**bold**` for bold text.
-  - **Emojis**: Use `:cloud:` to display a cloud emoji.
-  - **Tables**: Various table formatting options are available.
-  - **Anchors**: Create page-specific anchors and hyperlinks.
-  - **Image Referencing**: Use local paths for images.
-
----
-
-# GitPod Setup Guide
-
-## Sign-Up and Configuration
-- **Step 1**: Sign up for GitPod and link your GitHub account.
-- **Step 2**: Configure your workspace settings.
-![Workspace Configuration](note_assets/git_and_gitpod_export/Untitled.png)
-
-## Workspace Usage
-- **Step 3**: Launch and use the workspace like a local environment.
-![VSCode Environment](note_assets/git_and_gitpod_export/Untitled%202.png)
-- **Step 4**: Sync your repository using `git pull`.
-![Git Pull](note_assets/git_and_gitpod_export/Untitled%201.png)
 
 ---
 
@@ -92,7 +61,11 @@ This week focused on initial setup and environment configuration. Tasks complete
   - 🚨 **Note**: The name must be the same for validation purposes.
 ![Template Validation](note_assets/Copying_github_project_repo/Untitled.png)
 
-### Debugging and Troubleshooting Checklist
+
+---
+
+
+# Debugging and Troubleshooting Checklist
 
 1. **Did you use LLMs to research the issue?**
     1. What did you find?
@@ -117,23 +90,24 @@ This week focused on initial setup and environment configuration. Tasks complete
 - **Clarity**: Proper formatting makes it easier to understand the checklist.
 - **Efficiency**: A well-organized list saves time, especially when you're debugging or troubleshooting, which is crucial in your role as a Cloud Engineer. 🛠️
 
-## GitHub Flavoured Markdown
-> Only took notes of features I didn't know or was unsure of
-
-### Documentation Essentials with GitHub Flavored Markdown
-
-#### Hard Requirement for Documentation
-- **Mandatory**: Ensure some level of documentation is maintained.
-
-#### Notion to GitHub
-- **Export & Upload**: Convert Notion notes to markdown and upload to GitHub.
-
 ---
 
-#### GitHub Flavored Markdown (GFM)
+
+# GitHub Flavoured Markdown
+> Only took notes of features I didn't know or was unsure of
+
+## Documentation Essentials with GitHub Flavored Markdown
+
+### Hard Requirement for Documentation
+- **Mandatory**: Ensure some level of documentation is maintained.
+
+### Notion to GitHub
+- **Export & Upload**: Convert Notion notes to markdown and upload to GitHub.
+
+### GitHub Flavored Markdown (GFM)
 - **Enhanced Features**: Offers more than standard Markdown.
 
-#### Images
+### Images
 - **Markdown Syntax**: 
   ```jsx
   ![backtick-key](<url-for-image>)
@@ -143,25 +117,25 @@ This week focused on initial setup and environment configuration. Tasks complete
   <img width="200px" src="<url-for-image>")
   ```
 
-#### Text Formatting
+### Text Formatting
 - **Bold Text**: 
   ```jsx
   __bold__
   **bold**
   ```
 
-#### Emojis
+### Emojis
 - **Emoji Support**: 
   ```jsx
   :cloud: -> Shows a cloud emoji!
   ```
 
-#### Tables
+### Tables
 - **Variety**: Multiple table formatting options.
 - **Reference**: [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
   - 💡 **See 4.10 Tables (extension)** for table formatting details.
 
-#### Anchors & Hyperlinks
+### Anchors & Hyperlinks
 - **Page-Specific Anchors**: 
   ```jsx
   [see references below](#external-references)
@@ -169,7 +143,7 @@ This week focused on initial setup and environment configuration. Tasks complete
   ```
   - 💡 **Note**: Headings are lowercased and spaces are replaced with `-`.
 
-#### Image Referencing
+### Image Referencing
 - **Local Paths**: 
   ```jsx
   ![image-name-or-description](images/image.jpg)
@@ -180,27 +154,28 @@ This week focused on initial setup and environment configuration. Tasks complete
 - **Consistency**: Uniform documentation enhances readability and maintainability.
 - **Efficiency**: Knowing these Markdown features can speed up your documentation process, which is a key skill for a Cloud Engineer. 🌩️
 
+---
 
-### How to Sign Up for GitPod and Get Started
+# How to Sign Up for GitPod and Get Started
 
-#### Sign-Up & GitHub Linking
+## Sign-Up & GitHub Linking
 - **Step 1**: Sign up for GitPod.
 - **Step 2**: Link your GitHub account during the signup process.
 
-#### Workspace Configuration
+## Workspace Configuration
 - **Step 3**: Log in to GitPod and click `create new workspace`.
   - **Git Repo**: Choose the repository you want to work on.
   - **Editor**: Select your preferred code editor.
   - **Machine Size**: Pick the machine size that suits your needs.
 ![Alt text](note_assets/git_and_gitpod_export/Untitled.png)
 
-#### Launch & Use Workspace
+## Launch & Use Workspace
 - **Step 4**: Once the workspace launches, a VSCode environment will open in your browser.
   - **Local-Like Experience**: Use it as if it's installed on your computer.
   - **Commit Changes**: Don't forget to commit before closing the workspace.
 ![Alt text](<note_assets/git_and_gitpod_export/Untitled 2.png>)
 
-#### Syncing Repo
+## Syncing Repo
 - **Step 5**: Perform a `git pull` to sync GitPod with the latest version of your repository.
 
 ![.](<note_assets/git_and_gitpod_export/Untitled 1.png>)
@@ -209,7 +184,7 @@ This week focused on initial setup and environment configuration. Tasks complete
 - **Convenience**: GitPod offers an on-the-go coding environment, accessible from any device.
 - **Efficiency**: The setup saves you the hassle of local environment configurations, which is a time-saver for a busy Cloud Engineer like you. 🌩️
 
-
+---
 
 # Copying the Template GitHub Project Repo
 
@@ -227,6 +202,8 @@ There are validators that require this name to be the same!
 ![Alt text](<note_assets/Copying_github_project_repo/Untitled 1.png>)
 
 ![Alt text](<note_assets/Copying_github_project_repo/Untitled 2.png>)
+
+---
 
 # Branching, Tagging, and Pull Requests
 
